@@ -28,3 +28,13 @@ This project develops a simplified social media platform (HKUgram) with a focus 
 -  Users can visualize posts in their feed
 -  Each post should display: Username, Text description, Image, Timestamp
 -  Users can like and unlike posts
+
+## Work Methodology
+
+- Selected an assigned issue
+- Create a separate branch for that specific issue
+- Add your changes
+- Commit and push
+- Open a new Pull Request
+- Wait for at least one teammate approval
+- Merge and delete branch
