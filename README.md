@@ -14,10 +14,17 @@ Social Media Application - HKUgram
 
 ## Project Description
 
-This project develops a simplified social media platform (HKUgram) with a focus on database design and SQL querying. Users can create posts with text and images, like and interact with content, and view posts through a dynamic feed. The system highlights relational data modeling, efficient queries, and basic analytics such as trending posts and user activity, implemented using React, Express.js, and MySQL.
+This project develops a simplified social media platform (HKUgram) with a focus on database design and SQL querying. Users can create posts with text and images, like and interact with content, and view posts through a dynamic feed. The system highlights relational data modeling, efficient queries, and basic analytics such as trending posts and user activity, implemented using React, FastAPI, and MySQL.
 
 ## Specifications
 
 - **Frontend**: React / TypeScript
-- **Backend**: Python
+- **Backend**: Python (FastAPI)
 - **Database**: MySQL
+
+## Requirements Description
+-  Users can create accounts with unique usernames and login to their accounts
+-  Users can create posts with images via URL
+-  Users can visualize posts in their feed
+-  Each post should display: Username, Text description, Image, Timestamp
+-  Users can like and unlike posts
