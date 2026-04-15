@@ -46,3 +46,34 @@ This project develops a simplified social media platform (HKUgram) with a focus 
 
    ```bash
    cd server
+   ```
+
+2. Create a Python virtual environment if you have not done so already:
+
+   ```bash
+   python -m venv venv
+   ```
+
+3. Activate the virtual environment:
+
+   **macOS / Linux**
+   ```bash
+   source venv/bin/activate
+   ```
+
+   **Windows**
+   ```bash
+   venv\Scripts\activate
+   ```
+
+4. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Start the FastAPI server:
+
+   ```bash
+   uvicorn main:app --reload
+   ```
