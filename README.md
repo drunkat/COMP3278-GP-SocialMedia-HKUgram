@@ -19,5 +19,5 @@ This project develops a simplified social media platform (HKUgram) with a focus 
 ## Specifications
 
 - **Frontend**: React / TypeScript
-- **Backend**: Express.js
+- **Backend**: Python
 - **Database**: MySQL
