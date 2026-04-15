@@ -8,7 +8,7 @@ Social Media Application - HKUgram
 | ---------------- | ---------- | -------------- |
 | Fatima-Tul-Zahra | 3036217037 | https-fatima   |
 | Dengshuyu        | X          | X              |
-| Tang Yiping      | X          | X              |
+| Tang Yiping      | 3036253873 | tangyiping2005 |
 | Yu Tin Yau       | 3036067353 | lolimast3r     |
 | Sami Erafii      | 3036677926 | serafii        |
 
