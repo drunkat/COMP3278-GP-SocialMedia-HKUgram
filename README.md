@@ -23,11 +23,12 @@ This project develops a simplified social media platform (HKUgram) with a focus 
 - **Database**: MySQL
 
 ## Requirements Description
--  Users can create accounts with unique usernames and login to their accounts
--  Users can create posts with images via URL
--  Users can visualize posts in their feed
--  Each post should display: Username, Text description, Image, Timestamp
--  Users can like and unlike posts
+
+- Users can create accounts with unique usernames and login to their accounts
+- Users can create posts with images via URL
+- Users can visualize posts in their feed
+- Each post should display: Username, Text description, Image, Timestamp
+- Users can like and unlike posts
 
 ## Work Methodology
 
@@ -38,3 +39,10 @@ This project develops a simplified social media platform (HKUgram) with a focus 
 - Open a new Pull Request
 - Wait for at least one teammate approval
 - Merge and delete branch
+
+## Backend Workflow
+
+1. Navigate to the server directory:
+
+   ```bash
+   cd server
