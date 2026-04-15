@@ -42,8 +42,7 @@ This project develops a simplified social media platform (HKUgram) with a focus 
 
 ## Backend Workflow
 
-- Navigate to the server directory
-- Create a python venv if not done already (python -m venv venv)
-- Activate the virtual environment
-- Install dependencies
-- Start the server
+1. Navigate to the server directory:
+
+   ```bash
+   cd server
