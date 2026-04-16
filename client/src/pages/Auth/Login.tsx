@@ -172,7 +172,13 @@ const Login: React.FC = () => {
                 </p>
               </div>
 
-              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+              <form
+                className="space-y-4"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleSubmit();
+                }}
+              >
                 <div className="space-y-1">
                   <label className="text-sm font-medium text-gray-300 ml-1">
                     Email or Username
@@ -219,8 +225,8 @@ const Login: React.FC = () => {
 
                 <button
                   className={`w-full bg-brand-500 hover:bg-brand-600 text-white font-medium rounded-xl py-3 mt-6 transition-all shadow-[0_0_20px_rgba(217,70,239,0.2)] hover:shadow-[0_0_25px_rgba(217,70,239,0.4)] flex items-center justify-center gap-2 group ${!emailOrUsername || !password ? "opacity-50 cursor-not-allowed" : "hover:cursor-pointer"}`}
+                  type="submit"
                   disabled={!emailOrUsername || !password}
-                  onClick={handleSubmit}
                 >
                   Sign In
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
