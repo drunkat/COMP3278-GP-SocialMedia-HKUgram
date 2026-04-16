@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
-import Home from "./pages/Home";
+import Login from "./pages/Auth/Login";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
       </Routes>
     </Router>
   );
