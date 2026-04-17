@@ -1,6 +1,6 @@
 # COMP3278 - HKU Spring 2026
 
-Social Media Application - HKUgram
+Social Media Application - HKgram
 
 ## Team Members
 
@@ -14,7 +14,7 @@ Social Media Application - HKUgram
 
 ## Project Description
 
-This project develops a simplified social media platform (HKUgram) with a focus on database design and SQL querying. Users can create posts with text and images, like and interact with content, and view posts through a dynamic feed. The system highlights relational data modeling, efficient queries, and basic analytics such as trending posts and user activity, implemented using React, FastAPI, and MySQL.
+This project develops a simplified social media platform (HKgram) with a focus on database design and SQL querying. Users can create posts with text and images, like and interact with content, and view posts through a dynamic feed. The system highlights relational data modeling, efficient queries, and basic analytics such as trending posts and user activity, implemented using React, FastAPI, and MySQL.
 
 ## Specifications
 
@@ -57,11 +57,13 @@ This project develops a simplified social media platform (HKUgram) with a focus 
 3. Activate the virtual environment:
 
    **macOS / Linux**
+
    ```bash
    source venv/bin/activate
    ```
 
    **Windows**
+
    ```bash
    venv\Scripts\activate
    ```
