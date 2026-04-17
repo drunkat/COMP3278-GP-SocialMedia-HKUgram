@@ -109,7 +109,9 @@ const Home: React.FC = () => {
 
       {/* Right side */}
       <div className="w-full lg:w-120 xl:w-135 flex flex-col items-center justify-center p-6 sm:p-8 lg:p-16 relative z-10 bg-dark-800">
-        {location.pathname === "/login" ? <Login /> : <CreateAccount />}
+        <div className="w-full lg:w-120 xl:w-135 flex flex-col items-center justify-center p-6 sm:p-8 lg:p-16 relative z-10 bg-dark-800">
+          {location.pathname === "/login" ? <Login /> : <CreateAccount />}
+        </div>
       </div>
     </div>
   );
