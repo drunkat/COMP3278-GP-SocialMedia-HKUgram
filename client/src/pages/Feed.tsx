@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Mock data for the feed
 const MOCK_POSTS = [
@@ -73,7 +74,10 @@ const Feed: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           
           {/* Left Side: Logo & Name */}
-          <div className="flex items-center gap-3">
+          <Link 
+            to="/" 
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer"
+          >
             <img
               src="/hkgram_favicon_single.png"
               alt="HKGram Logo"
@@ -83,13 +87,7 @@ const Feed: React.FC = () => {
             <span className="text-xl font-bold tracking-tight text-white hidden sm:block">
               HKGram
             </span>
-            
-            {/* Divider and Username */}
-            <div className="h-5 w-px bg-dark-600 mx-2"></div>
-            <span className="text-sm font-medium text-gray-300 bg-dark-800 px-3 py-1.5 rounded-full border border-dark-600">
-              @{currentUser}
-            </span>
-          </div>
+          </Link>
 
           {/* Right Side Actions (Optional placeholders) */}
           <div className="flex items-center gap-4 text-sm font-medium">
