@@ -22,6 +22,7 @@ app.add_middleware(
 # http://localhost:8000
 
 app.include_router(auth_router, prefix="/auth")
+app.include_router(likes.router)
 
 @app.get("/")
 def read_root():
