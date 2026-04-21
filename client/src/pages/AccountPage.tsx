@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 
+// Define a TypeScript interface for the user object
+interface User {
+  username: string;
+  email: string;
+  bio: string;
+}
+
 const BASE_URL = "http://127.0.0.1:8000"; // FastAPI backend URL
 const USER_ID = 2; // Example user ID, replace with logged-in user ID
 
 export default function AccountPage() {
-  const [user, setUser] = useState({ username: "", email: "", bio: "" });
+  // State with type safety: user must match the User interface
+  const [user, setUser] = useState<User>({ username: "", email: "", bio: "" });
 
   // Load user info when component mounts
   useEffect(() => {
@@ -24,7 +32,7 @@ export default function AccountPage() {
     loadAccount();
   }, []);
 
-  // Update user info
+  // Update user info (only bio in this example)
   async function updateAccount() {
     try {
       const response = await fetch(`${BASE_URL}/users/${USER_ID}`, {
@@ -44,6 +52,7 @@ export default function AccountPage() {
     <div className="max-w-md mx-auto bg-white shadow-md rounded-lg p-6 mt-10">
       <h2 className="text-2xl font-bold text-center mb-6">My Account</h2>
 
+      {/* Username field (read-only) */}
       <div className="mb-4">
         <label className="block font-semibold mb-2">Username</label>
         <input
@@ -54,6 +63,7 @@ export default function AccountPage() {
         />
       </div>
 
+      {/* Email field (read-only) */}
       <div className="mb-4">
         <label className="block font-semibold mb-2">Email</label>
         <input
@@ -64,6 +74,7 @@ export default function AccountPage() {
         />
       </div>
 
+      {/* Editable Bio field */}
       <div className="mb-4">
         <label className="block font-semibold mb-2">Bio</label>
         <textarea
@@ -73,6 +84,7 @@ export default function AccountPage() {
         />
       </div>
 
+      {/* Update button */}
       <button
         onClick={updateAccount}
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
